@@ -15,3 +15,8 @@ wpscan --url http://127.0.0.1 -U users.txt -P /usr/share/wordlists/rockyou.txt
 ```console
 wfuzz -w lfi-list.txt  --hh 0  'http://127.0.0.1/index.php?FUZZ=test'
 ```
+## JtR
+[hash crack]
+```console
+john hash --wordlist=/usr/share/wordlists/rockyou.txt
+```
