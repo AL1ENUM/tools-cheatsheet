@@ -1,5 +1,9 @@
 # Tools usage list
-
+## gobuster
+[directory scan]
+```console
+gobuster dir -k -u http://127.0.0.1/ -w list.txt -x .php,.txt,.bak,.html
+```
 ## dnsenum 
 [subdomain discovery]
 ```console
