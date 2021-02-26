@@ -14,6 +14,10 @@ dnsenum --threads 64 --dnsserver 127.0.0.1 -f subdomains-top1million-110000.txt 
 ```console
 wpscan --url http://127.0.0.1 -U users.txt -P /usr/share/wordlists/rockyou.txt
 ```
+[enumerate users]
+```console
+wpscan --url http://127.0.0.1 --enumerate u
+```
 ## wfuzz
 [get parameter]
 ```console
