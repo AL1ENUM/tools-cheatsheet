@@ -33,3 +33,8 @@ john hash --wordlist=/usr/share/wordlists/rockyou.txt
 ```console
 hydra -l admin -P /usr/share/wordlists/rockyou.txt 127.0.0.1 http-post-form "/login.php:username=^USER^&password=^PASS^&Login=Login:Login Failed"
 ```
+## SOCAT
+[Port Forwarding]
+```console
+socat TCP-LISTEN:80,fork TCP:127.0.0.1:80
+```
